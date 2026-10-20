@@ -1,0 +1,17 @@
+{
+  "name": "venice-ddos",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Ten-method Layer 4/7 stress tester. Runs on Vercel or locally.",
+  "main": "local.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node local.js",
+    "dev": "vercel dev",
+    "deploy": "vercel --prod",
+    "swarm": "node swarm.js"
+  },
+  "dependencies": {
+    "@vercel/functions": "^1.0.0"
+  }
+}
